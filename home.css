@@ -676,6 +676,7 @@ body{
       /* display: inline-block; */
       margin-top: 140px;
       margin-right: 2%;
+     
       
   }
 
@@ -692,7 +693,7 @@ body{
   }
 
 
-  .right span{
+  .right h6{
       font-size: 16px;
       line-height: 22px;
       font-weight: 200;
@@ -727,7 +728,7 @@ body{
   }
   
    .btn1 a{
-    border: none;
+    /* border: 0.5px solid white; */
   display: block;
   text-align: center;
   cursor: pointer;
@@ -735,16 +736,21 @@ body{
   outline: none;
   overflow: hidden;
   position: relative;
-  color: #000;
+  color: #ffbc05;
+  text-transform: uppercase;
+  /* color: #551a8b; */
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  background: #47cf73;
+  /* background: #47cf73; */
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(249,4,239,1) 50%, rgba(112,112,126,1) 50%, rgba(99,99,105,1) 50%, rgba(9,176,244,1) 50%, rgba(9,207,240,1) 50%, rgba(12,17,19,1) 50%, rgba(13,13,247,1) 50%, rgba(7,16,255,1) 50%, rgba(0,0,0,1) 50%);
   padding: 20px 35px;
   border-radius: 40px;
   
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  transition: 0.5s;
   
       }
       
@@ -754,6 +760,7 @@ body{
         
         
     }  
+/*  
 .btn1 a:after {
     content: "";
     position: absolute;
@@ -761,8 +768,7 @@ body{
     top: 0;
     height: 490%;
     width: 140%;
-    /* background: #78c7d2; */
-    /* background: #248c46; */
+    
     background: white;
     color: white;
     -webkit-transition: all .5s ease-in-out;
@@ -775,14 +781,15 @@ body{
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
+   */
 
-/*  
   .btn1 a:hover{
-        background: #248c46;
-        color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(249,4,239,1) 50%, rgba(112,112,126,1) 50%, rgba(99,99,105,1) 50%, rgba(9,176,244,1) 50%, rgba(9,207,240,1) 50%, rgba(12,17,19,1) 50%, rgba(13,13,247,1) 50%, rgba(7,16,255,1) 50%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
+        /* color: white; */
       }
       
-   */
+   
   
 
 
@@ -1497,11 +1504,25 @@ body{
     .btn1 a{
         font-size: 16px;
     }
+
+    .right h3{
+        text-align: center;
+    }
+    .right p{
+        text-align: center;
+    }
+
+    .right h6{
+       
+        text-align: center;
+        
+    }
 }
 @media screen and (max-width:420px) {
     .btn1{
         right: 23%;
     }
+    
     
 }
 
@@ -1518,6 +1539,8 @@ body{
     .parent{
         height: 1230px;
     }
+
+    
     
 }
 
@@ -1558,9 +1581,9 @@ body{
     .right h1{
         font-size: 18px;
     }
-    .right span{
+    .right h6{
         font-size: 14px;
-        margin-left: 5px;
+        /* margin-left: 5px; */
     }
  
 
@@ -2125,7 +2148,7 @@ footer{
      display: block;
     margin-left: 20px;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 300;
     transition: all 0.3s ease;
     padding: 5px 0;
@@ -2277,6 +2300,43 @@ footer{
     .foot-col p{
         margin-left: 15px;
     }
+  }
+
+  @media screen and (max-width:440px) {
+    .foot-col-1 h3{
+      margin-left: 10px;
+  }
+  .foot-col-1 h3::before{
+    left: 20px;
+  }
+  .foot-col-1 a{
+      margin-left: 10px;
+  }
+  
+  .foot-col-2 h3{
+      margin-left: 2px;
+      /* margin-top: 10px; */
+  }
+  .foot-col-2 h3::before{
+    left: 13px;
+
+  }
+  .foot-col-2 p{
+      margin-left: 3px;
+  }
+  .foot-col h3{
+      font-size: 20px;
+      margin-left: 7px;
+      margin-top: 13px;
+
+  }
+  .foot-col p{
+      margin-left: 8px;
+      font-size: 15px;
+      margin-top: 10px;
+  }
+
+    
   }
   
   @media screen and (max-width:335px) {
