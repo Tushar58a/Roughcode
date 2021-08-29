@@ -96,7 +96,7 @@
 
         }
     </script>
-    <div id="headnotice" style="border-left:10px solid #04ffee;">
+    <div id="headnotice" style="border-left:8px solid #04ffee;">
         <div class="rellax" data-rellax-speed="-1" data-rellax-zindex="-5">
             <h1 div data-aos="slide-down" data-aos-delay="50" data-aos-duration="1000">Check our pallete-generator
                 <span><a href=""
@@ -130,15 +130,16 @@
 
 
                 <h1 div data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000">
-                    <span class="live"><i class="fas fa-life-ring"></i></span>
-                    <span style="color:orangered">LIVE</span> CODE-EDITOR
+                    <!-- <span class="live"><i class="fas fa-life-ring"></i></span> -->
+                    <span style="color:orangered">Live</span> Code-Editor
                 </h1>
                 <!-- <h3>Make it fun not <span style="color: #F51663;">hectic</span></h3> -->
-                <h4>Its easy to <span style="color: #FA53A0; font-weight: 600;">impliment</span> your code with our
+                <h4 style="color:#fff;">Its easy to <span style="color: #FA53A0; font-weight: 600;">impliment</span>
+                    your code with our
                     Roughcode cuz its</h4>
                 <p style="font-family: 'Poppins', sans-serif;"> <span
                         style="color: rgba(116, 252, 5, 0.863);">C</span><span style="color: #01b7ff;">S</span><span
-                        style="color: #01b7ff;">S</span> <span style="color: rgb(46, 44, 44);">-</span>
+                        style="color: #01b7ff;">S</span> <span style="color: rgb(255, 255, 255);">:</span>
                     <span style="color:rgb(73, 250, 3);">costfree</span>
                     <span style="color:#01b7ff">simple</span> <span style="color:#ffaa00">sophisticated</span>
                 </p>
@@ -404,7 +405,7 @@
         <h1>customize theme with <i class="fi-rr-palette"></i>olors</h1>
         <h2 style="font-size:28px;">explore more </h2>
         <a href="javascript:void(0);" class="icon" onclick="myFunction4()">
-            <i class="fi-rr-apps" style="padding-left:4px;padding-top:48px;"></i>
+            <i class="fas fa-angle-double-down" id="icontemp"></i>
         </a>
         <!-- <i class="fi-rr-arrow-right" style="float: right;"></i> -->
     </div>
@@ -496,11 +497,33 @@
 
 
 
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-    <div class="no-display">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-578cc62c-483a-4c08-9ae8-0e642dc4014b "></div>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109290764806540");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         // function heaven() {
@@ -540,21 +563,24 @@
 
             <div class="html">
                 <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-html5"></i> HTML
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-html5"
+                        style="color:#ff3c41;"></i> HTML
                 </h1>
                 <textarea id="htmlCode" placeholder="HTML Code" oninput="showPreview()"></textarea>
                 <div class="copyboard" id="3" onclick="clipboard1()"><i class="fi-rr-copy-alt"></i>clipboard</div>
             </div>
             <div class="css">
                 <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-css3-alt"></i> CSS</h1>
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-css3-alt"
+                        style="color:#0ebeff;"></i> CSS</h1>
 
                 <textarea id="cssCode" placeholder="CSS Code" oninput="showPreview()"></textarea>
                 <div class="copyboard" id="2" onclick="clipboard2()"><i class="fi-rr-copy-alt"></i>clipboard</div>
             </div>
             <div class="js">
                 <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-js"></i>JS</h1>
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-js"
+                        style="color:#fcd000;"></i>JS</h1>
 
                 <textarea id="jsCode" placeholder="JavaScript Code" oninput="showPreview()"></textarea>
                 <div class="copyboard" id="1" onclick="clipboard()"><i class="fi-rr-copy-alt"></i>clipboard</div>
@@ -600,8 +626,11 @@
         <h1>this process is in devolopment phase </h1>
         <h1>refreshing won't work</h1>
     </div>
-    <div style="background-color: #131417;border-left:8px solid #00BFB2;padding-top:3px;">
+    <div style=" background-color:#131417;border-left:8px solid #00BFB2;padding-top:3px;">
         <div class="link-header">
+            <div class="see-more">
+                <h4>Swipe right <i class="fi-rr-angle-double-right"></i></h4>
+            </div>
             <h2 div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
                 <span style="color: rgb(2, 250, 176);font-weight:500;font-size:18px;"> Some
                     useful</span> <br><span style="font-weight:700;font-size:32px;">we<span
@@ -991,8 +1020,8 @@
 
         var headerStyle = document.getElementById('header');
         window.addEventListener('scroll', function () {
-            headerStyle.style.backgroundSize = 140 - +window.pageYOffset / 12 + "%";
-            headerStyle.style.opacity = 1 - +window.pageYOffset / 700 + '';
+            headerStyle.style.backgroundSize = 400 - +window.pageYOffset / 6 + "%";
+            headerStyle.style.opacity = 1 - +window.pageYOffset / 500 + '';
         })
     </script>
     <script>

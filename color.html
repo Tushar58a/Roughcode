@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rough Code: The Online Code Editor and Color Selector Platform </title>
-  <meta name="description"
-    content="RoughCode is a combination of online code editor and color selector platform where you can run and test HTML, CSS , JS code and experience and impliment your code with us costfree-simple-sophisticated  ">
-  <meta name="theme-color" content="#131417">
+  <title>RoughCode: Gradient Background Colors</title>
+<meta name="description"
+        content="Choose any two color it will display diffrent colors in between your selected two colors then click your favourite div, it will expand and choose a right hex-color code.  ">
+<meta name="theme-color" content="#35acdb">
   <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
   <link rel="stylesheet" href="color.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -32,12 +32,9 @@
   </script>
 
 
-
-
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <div class="bounce"> </div>
   <div class="shadow"> </div>
-  <div class="elfsight-app-578cc62c-483a-4c08-9ae8-0e642dc4014b "></div>
+  
 
   <div id="snackbar">
     <h2> we found your device's width to be
@@ -51,7 +48,7 @@
 
   <div class="name">
     <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" class="licon"
-      colors="primary:#1f1fd3,secondary:#f8105d" stroke="92" style="width:100px;height:100px;">
+      colors="primary:#1f1fd3,secondary:#FA26A0" stroke="92" style="width:100px;height:100px;">
     </lord-icon>
     <h1> <span class="text1">R</span><span class="text2">O</span><span class="text3">U</span><span
         class="text4">G</span><span class="text5">H</span><span class="text6">C</span><i id="exp"
@@ -77,9 +74,9 @@
   </div>
 
   <div class="floating-text" data-aos="slide-up" data-aos-delay="130" data-aos-duration="9000">
-    <h2>Want to run your code?</h2>
+    <h2>Want to run your <span style="color: rgb(247, 7, 207);">code</span>?</h2>
   </div>
-  <div class="link" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500">
+  <div class="link" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000">
     <a href="#"><span>Try Our Editor</span></a>
   </div>
 
@@ -289,7 +286,7 @@
     </div>
 
 
-    <div data-aos="flip-up">
+    <div data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000" >
       <button><span>Generate</span></button>
 
     </div>
@@ -336,7 +333,7 @@
 
     <div class="expandable-div-header" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000">
       <h2><i class="fas fa-compress-arrows-alt"></i><span> Expand</span>able <span
-          style="color: rgb(231, 19, 136);">color</span> maker Tool</h2>
+          style="color: rgb(231, 19, 136);">Color</span> Maker Tool</h2>
       <p style="color:#808080;">Choose any two color it will
         display diffrent colors in between
         your selected two colors then click your favourite div,
@@ -383,7 +380,7 @@
   </div>
 
   <div class="color-tester" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000">
-    <h2><i class="fas fa-swatchbook"></i> Color testing tool</h2>
+    <h2><i class="fas fa-swatchbook"></i> Color <span style="color:#00ffd5";> testing</span> tool</h2>
     <p>Experiment with different background colors</p>
   </div>
 
@@ -395,20 +392,25 @@
 
     <input type="color" value="#31fbe9" id="color"
       style="color: rgb(7, 11, 253);  border-radius: 50%;padding: 9px;margin-bottom: 8px;">
-    <div class="colorful" data-aos="slide-up" data-aos-duration="4000"
-      style="width: calc(100%-10px); height: 200px; border-left: 10px solid rgb(255, 255, 255); background-color: #31fbe9;background-image: url('./image/mobilenet.png');">
+    <div class="colorful" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+      style="width: 100%; height: 200px; background-color: #31fbe9;background-image: url('./image/mobilenet.png');">
       <h2 style="color: #ffffff;">Display a color on background </h2>
     </div>
   </div>
 
 
+
+
+
+
+
   <div class="try-background" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000"
-    style="margin-top:10px;m">
-    <h2><i class="fas fa-fill" style="color: #ff07d6;"></i> Play with colors</h2>
+    style="margin-top:10px;">
+    <h2><i class="fas fa-fill" style="color: #ff07d6;"></i> Play with <span style="color: #ff07d6;">Colors</span></h2>
     <p>Choose and display a good color reflect on background</p>
   </div>
 
-  <div class="container-box" data-aos="slide-right" data-aos-duration="1000">
+  <div class="container-box" data-aos="slide-up" data-aos-duration="1000">
 
     <div class="container">
       <div class="colors">
@@ -441,7 +443,7 @@
           <i class="fas fa-arrow-left"></i>
         </button>
       </div>
-      <button id="submit" onclick="generateCode()"><span>Generate</span></button>
+      <button id="submit" onclick="generateCode()"><span>Generate<i class="fi-rr-cursor-plus"></i></span></button>
       <div class="output">
         <textarea id="code" rows="2"></textarea>
         <button id="copy" onclick="copyText()"><i class="fi-rr-copy"></i></button>

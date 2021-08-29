@@ -84,6 +84,7 @@
   .tab h2{
       margin-left: 10px;
       color: #fff;
+      text-shadow: 0px 4px 4px rgba(0,0,0,0.4);
   }
   .tab p{
       margin-left: 10px;
@@ -96,6 +97,7 @@
     /* background-color: #04AA6D; */
     background-color: #d33f8d;
     color: #ffffff;
+   
     border: none;
     border-radius: 6px;
     padding: 12px 30px;
@@ -187,21 +189,100 @@
       width: 100%;
     }
     h1{
-      font-size: 18px;
+      font-size: 19px;
       margin-left: -20px;
     }
     .tab h2{
-      font-size: 16px;
+      font-size: 17px;
       margin-left: -20px;
     }
     .tab p{
       margin-left: -20px;
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 
 
-  @media screen and (max-width:335px) {
+
+  @media screen and (max-width:398px) {
+
+    .btn1{
+      
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn3{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn2{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn4{
+        background-color: #04AA6D;
+        /* background-color: #d33f8d; */
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        display: none;
+        /* position: absolute; */
+    
+      }
+    }
+
+
+  @media screen and (max-width:347px) {
 
   .btn1{
       /* background-color: #04AA6D; */
@@ -229,7 +310,7 @@
       border-radius: 6px;
       padding: 12px 20px;
       margin-top: 30px;
-      margin-left: 0px;
+      margin-left: 5px;
       font-size: 14px;
       /* font-family: Raleway; */
       cursor: pointer;
@@ -259,13 +340,13 @@
     }
     .btn4{
       /* background-color: #04AA6D; */
-      background-color: #d33f8d;
+      background-color: #04AA6D;
       color: #ffffff;
       border: none;
       border-radius: 6px;
       padding: 12px 20px;
       margin-top: 30px;
-      margin-left: 0px;
+      margin-left: 5px;
       font-size: 14px;
       /* font-family: Raleway; */
       cursor: pointer;
@@ -277,19 +358,109 @@
   
     }
      h1{
-       margin-left: -35px;
-       font-size: 15px;
+       margin-left: -25px;
+       font-size: 18px;
      }
      .tab h2{
-       margin-left: -35px;
-       font-size: 14px;
+       margin-left: -25px;
+       font-size: 16px;
      }
      .tab p{
-       margin-left: -35px;
-       font-size: 12px;
+       margin-left: -25px;
+       font-size: 14px;
      }
   }
 
+
+  @media screen and (max-width:328px) {
+
+    .btn1{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn3{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn2{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn4{
+        background-color: #04AA6D;
+        /* background-color: #d33f8d; */
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        display: none;
+        /* position: absolute; */
+    
+      }
+       h1{
+         margin-left: -35px;
+         font-size: 15px;
+       }
+       .tab h2{
+         margin-left: -35px;
+         font-size: 14px;
+       }
+       .tab p{
+         margin-left: -35px;
+         font-size: 12px;
+       }
+    }
+  
   
   .step {
     height: 15px;

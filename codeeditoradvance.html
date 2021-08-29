@@ -105,9 +105,9 @@
         <div class="rellax" data-rellax-speed="-1" data-rellax-zindex="-5">
             <h1 div data-aos="slide-down" data-aos-delay="50" data-aos-duration="1000"> <span class="live"><i
                         class="fas fa-life-ring"></i></span> <span style="color: orangered;" ;>LIVE</span> CODE-EDITOR
-                <span><a href="codeeditor.html"
-                        style="float:right;padding-right:10px;color:rgb(253, 253, 253);text-decoration:none;">Try
-                        Now</a></span>
+                <a href="codeeditor.html"
+                    style="float:right;padding-right:10px;color:rgb(253, 253, 253);text-decoration:none;"><span>Try
+                        Now</span></a>
             </h1>
         </div>
     </div>
@@ -137,7 +137,8 @@
 
                 <h2 div data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000">
 
-                    ADVANCED CODE-<span style="color: rgb(17, 0, 255);">EDITOR</span> </h2>
+                    ADVANCED CODE-<span style="color: rgb(17, 0, 255);">E<i class="fi-rr-folder-add"></i>ITOR</span>
+                </h2>
 
                 <p>It will give you better coding friendly environment to design align testing deployment code with
                     dark/light theme toggle experience</p>
@@ -213,10 +214,33 @@
         <iframe id="preview-window"></iframe>
     </div>
 
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="no-display">
-        <div class="elfsight-app-578cc62c-483a-4c08-9ae8-0e642dc4014b "></div>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109290764806540");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <footer data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
 
 
@@ -272,7 +296,7 @@
 
         var headerStyle = document.getElementById('header');
         window.addEventListener('scroll', function () {
-            headerStyle.style.backgroundSize = 140 - +window.pageYOffset / 12 + "%";
+            headerStyle.style.backgroundSize = 200 - +window.pageYOffset / 12 + "%";
             headerStyle.style.opacity = 1 - +window.pageYOffset / 700 + '';
         })
     </script>
